@@ -23,9 +23,7 @@ class Popup extends React.Component {
     return (
       <div className='popup'>
         <div className='popup_inner'>
-          {this.state.comic !== null?
             <CardBack character={this.props.char} clickHandler={this.props.clickHandler} comic={this.state.comic} stacked={this.props.stacked} popUpHandler={this.props.popUpHandler} charHandler={this.props.charHandler}/>:
-            null}
           <button onClick={this.props.closePopup} className="closeButton">
             X
           </button>
