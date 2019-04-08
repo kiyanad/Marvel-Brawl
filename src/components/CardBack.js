@@ -8,7 +8,8 @@ class CardBack extends React.Component{
 
   render(){
     let character = this.props.character
-    let comicURL = `${this.props.comic[0].thumbnail.path}/portrait_uncanny.${this.props.comic[0].thumbnail.extension}`
+    if(this.props.comic){
+    var comicURL = `${this.props.comic[0].thumbnail.path}/portrait_uncanny.${this.props.comic[0].thumbnail.extension}`}
     let imageURL = `${character.thumbnail.path}/portrait_uncanny.${character.thumbnail.extension}`
     var divStyle = {
       backgroundImage: 'url(' + comicURL + ')'
