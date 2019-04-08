@@ -17,7 +17,6 @@ class Popup extends React.Component {
       var end = url.slice(4)
       var newUrl = beg + "s" + end
 
-      // debugger
       // FETCHES THE SPECIFIC CHARACTERS COMIC BOOK BACKGROUND FROM MARVEL API
       fetch(newUrl)
       .then(res=>res.json())
