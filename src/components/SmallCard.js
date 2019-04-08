@@ -8,11 +8,21 @@ import '../CSS/SmallCard.css'
 class SmallCard extends Component {
   state = {
     clicked: false,
-    showPopup: false
+    showPopup: false,
+    char: null
 
   }
 
 
+componentDidMount(){
+  if(this.props.character.name.length > 15){
+    const split = this.props.character.name.split(" ")
+    const newName= split[0] + " " +split[1]
+      this.setState({
+        char: newName
+      })
+  }
+}
   //FUNCTIONS FOR DRAG
   // SETS THE ID AS TEXT IN THE DATA THAT IS BEING TRANSFERED TO DROP
    drag = (ev) => {
@@ -40,7 +50,7 @@ clickHandler = () => {
                   <div>
                     <div className="front2" draggable="true" onDragStart={(event) => {this.drag(event)}}>
                       <h1>
-                        {character.name}
+                      {this.state.char ? this.state.char : character.name}
                       </h1>
                       <img alt="character" id={`char-${character.id}`} draggable="true" onDragStart={(event) => {this.drag(event)}} className="charImage2" src={imageURL} onClick={this.props.clickHandler}/>
                     </div>

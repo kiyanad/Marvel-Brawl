@@ -173,28 +173,30 @@ button:active {
 
 #dropper-div{
   width: 13vw;
-  height: 14vw;
+  height: 11vw;
   cursor: copy;
-position: relative;
-top: 4vw;
+  position: relative;
+  top: 0vw;
+  left: -1.4vw;
 
    }
 
 #dropper-div2{
   width: 13vw;
-  height: 14vw;
-  cursor: copy;
-top: 10vw;
-position: relative;
-
+  height: 11vw;
+      cursor: copy;
+      top: 4.3vw;
+      position: relative;
+      left: -1.4vw;
 }
 
 #dropper-div3{
   width: 13vw;
-  height: 14vw;
+  height: 11vw;
   cursor: copy;
-  top: 16vw;
-position: relative;
+      top: 11vw;
+      position: relative;
+      left: -1.4vw;
 
 }
 
