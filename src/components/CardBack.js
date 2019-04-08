@@ -9,7 +9,8 @@ class CardBack extends React.Component{
   render(){
     let character = this.props.character
     if(this.props.comic){
-    var comicURL = `${this.props.comic[0].thumbnail.path}/portrait_uncanny.${this.props.comic[0].thumbnail.extension}`}
+    let comicURL = `${this.props.comic[0].thumbnail.path}/portrait_uncanny.${this.props.comic[0].thumbnail.extension}`
+
     let imageURL = `${character.thumbnail.path}/portrait_uncanny.${character.thumbnail.extension}`
     var divStyle = {
       backgroundImage: 'url(' + comicURL + ')'
@@ -21,13 +22,8 @@ class CardBack extends React.Component{
       backgroundImage: 'url(' + imageURL + ')'
 
     }
-    // console.log(divStyle);
-  // if(this.props.comic !== null){
-  //   debugger
-  //
-  // }
-    // debugger
-    // debugger`
+  }
+
     return(
       <div >
       <ul className="cardsBack">
