@@ -1,0 +1,280 @@
+
+
+/*===========================
+START // General Page/Layout
+============================*/
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+/* LAYOUT */
+.whole-container {
+  width: 100%;
+  height: auto;
+  margin: -10px;
+}
+
+section,
+header {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+.inner {
+  max-width: 1003px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.double,
+.triple,
+.double.triple {
+  max-width: 1003px;
+  display: block;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.half {
+  width: 50%;
+}
+
+.third {
+  width: 33.33%;
+}
+
+.two-thirds {
+  width: 66.66%;
+}
+
+/* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", sans-serif;
+  color: #222;
+}
+
+p,
+ul,
+li,
+ol {
+  font-family: 'Happy Monkey', cursive;
+  color: #222;
+}
+
+.blue {
+  color: #51cbf1;
+}
+
+.dkblue {
+  color: #038ecf;
+}
+
+.yellow {
+  color: #ffce55;
+}
+
+.orange {
+  color: #fa9939;
+}
+
+.pink {
+  color: #f03485;
+}
+
+.green {
+  color: #9dc705;
+}
+
+.red {
+  color: #f3655d;
+}
+
+/*===========================
+END // General Page/Layout
+============================*/
+/*===========================
+START // Top Nav Bar
+============================*/
+#topnav {
+  background: #222;
+  width: 100%;
+  height: 75px;
+  padding: 0 1em;
+}
+#topnav .logo {
+  width: 7%;
+  position: absolute;
+  padding: 1.25em;
+  background: #444;
+}
+#topnav .logo > img {
+  width: 100%;
+}
+#topnav .logo:hover {
+  background-color: #038ecf;
+  transition: background-color 1s ease;
+}
+#topnav .nav {
+  margin-left: 20%;
+  width: 80%;
+}
+#topnav .nav ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+#topnav .nav ul li {
+  float: left;
+  line-height: 4.2em;
+  width: auto;
+  display: inline-block;
+  padding: 0.25em 3em;
+  text-transform: uppercase;
+  font-family: 'Happy Monkey',cursive;
+  color: #fff;
+}
+#topnav .nav ul li:not(.action):hover, #topnav .nav ul li:hover a, #topnav .nav ul li:hover a:hover,
+#topnav .nav ul li a:hover {
+  background-color: #51cbf1;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+#topnav .nav ul li.action {
+  padding: 1em 1em 0;
+  line-height: 3em;
+}
+#topnav .nav ul li.action .btn {
+  padding: .5em 2em;
+  font-weight: 800;
+  color: #222;
+  background: #fff;
+  border: 2px solid #444;
+  height: auto;
+}
+#topnav .nav ul li.action .btn:hover {
+  background: #ffce55;
+  color: #222;
+  border-color: #fff;
+}
+
+/*===========================
+END // Top Nav Bar
+============================*/
+/*===========================
+START // Comic (Dot) Panels
+Original by @ashandrien | Comic Book Half Tone Background | https://codepen.io/ashandrien/pen/rnzsd
+============================*/
+.panel {
+  padding: 1em;
+  background-size: 8px 8px, 8px 8px, 8px 8px, 8px 8px, 8px 8px, 100% 100%;
+  border-top: 3px solid #444;
+  margin-bottom: -4px;
+  position: relative;
+  top: -9.4vw;
+z-index: -1;
+    height: 100%;
+}
+.panel.grey {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #484848 0, #959595 30%, #acacac 50%, #959595 70%, #484848 100%);
+}
+.panel.ltgrey {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #acacac 0, #dadada 30%, #f2f2f2 50%, #dadada 70%, #acacac 100%);
+}
+.panel.yellow {
+  background-image: radial-gradient(ellipse farthest-corner, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 35%, #ffffff 30%, #ffffff 40%, rgba(0, 0, 0, 0) 90%), radial-gradient(ellipse farthest-corner at 0px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 8px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), radial-gradient(ellipse farthest-corner at 0px 8px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 40%), radial-gradient(ellipse farthest-corner at 8px 0px, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, #ffffff 15%, #ffffff 20%, rgba(0, 0, 0, 0) 50%), linear-gradient(40deg, #ffce55 0, #fffc83 30%, #ffffb1 50%, #fffc83 70%, #ffce55 100%);
+}
+
+
+/*===========================
+END // Comic (Dot) Panels
+============================*/
+
+
+/*===========================
+START // Comic (Content) Panes
+Original by @beyondSimple | Comic style panes | https://codepen.io/beyondSimple/pen/sDibB
+============================*/
+/* BASE PANE PIECES */
+.comic .single .comic-pane,
+.comic .triple .comic-pane,
+.comic .double .comic-pane,
+.comic .triple.double .comic-pane {
+  width: 360px;
+  max-width: 943px;
+  height: auto;
+  min-height: 170px;
+  top: .5em;
+  left: 1.5em;
+  position: relative;
+  margin: 0px 1%;
+}
+.comic .single .comic-pane .text,
+.comic .triple .comic-pane .text,
+.comic .double .comic-pane .text,
+.comic .triple.double .comic-pane .text {
+  max-width: 18vw;
+  height: auto;
+  position: absolute;
+  -webkit-transform: skew(-15deg);
+          transform: skew(-15deg);
+  background: white;
+  box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  border-right: 3px solid;
+  max-height: 14vw;
+  min-height: 1vw;
+  overflow: scroll;
+  top: 2vw;
+  left: -0vw;
+
+}
+.comic .single .comic-pane .text::before,
+.comic .triple .comic-pane .text::before,
+.comic .double .comic-pane .text::before,
+.comic .triple.double .comic-pane .text::before {
+  content: "";
+  dislay: block;
+  position: absolute;
+  /* height: auto; */
+  width: 4em;
+  left: -2em;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+  background: white;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  -webkit-backface-visibility: hidden;
+}
+.comic .single .comic-pane .text .holder,
+.comic .triple .comic-pane .text .holder,
+.comic .double .comic-pane .text .holder,
+.comic .triple.double .comic-pane .text .holder {
+  width: 85%;
+  margin-top: 1.5em;
+  margin-left: 2em;
+  -webkit-transform: skew(15deg);
+          transform: skew(15deg);
+          margin-left: 40px;
+
+}
+.comic .single .comic-pane .text h2,
+.comic .triple .comic-pane .text h2,
+.comic .double .comic-pane .text h2,
+.comic .triple.double .comic-pane .text h2 {
+  font-size: 2vw;
+      margin-bottom: 0;
+      text-shadow: -1px -1px black, 1px 1px black, 2px 2px black;
+      font-weight: 400;
+      text-align: right;
+      margin-right: 2vw;
+}

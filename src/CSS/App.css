@@ -1,0 +1,226 @@
+/*  Wood Background*/
+body {
+  background: #666 url(https://s.cdpn.io/44759/Wood-Backgrounds-Picture.jpg) no-repeat top center;
+  background-size: 248vw;
+  font-family: Georgia;
+  font-size:0.75em;
+  line-height:1.5em;
+}
+/* END WOOD BACKGROUND */
+
+
+.bigDiv, #drop-div, #card-div{
+  width: auto;
+  height: -webkit-fill-available;
+  position: relative;
+  background: red;
+}
+/* .bigDiv, #drop-div, #card2-div{
+  width: auto;
+  height: -webkit-fill-available;
+  position: relative;
+  background: red;
+  top: 17vw;
+  left: -22vw;
+} */
+
+#card-div{
+  top: -7vw;
+  left: -19vw;
+
+}
+/* #smallcard-div{
+  top: 10vw;
+  left: -19vw;
+
+} */
+
+@font-face {
+  font-family: SuperHero;
+  src: url(../fonts/SUPERHERO.ttf);
+}
+@font-face {
+  font-family: Super;
+  src: url(../fonts/DigitalStripBB_BoldItal.ttf);
+}
+@font-face {
+  font-family: Super1;
+  src: url(../fonts/DigitalStripBB_Reg.ttf);
+}
+@font-face {
+  font-family: Super2;
+  src: url(../fonts/DigitalStripBB_Ital.ttf);
+}
+@font-face {
+  font-family: Super3;
+  src: url(../fonts/Comic.ttf);
+}
+@font-face {
+  font-family: Super4;
+  src: url(../fonts/AVENGEANCE.ttf);
+}
+@font-face {
+  font-family: Super5;
+  src: url(../fonts/Marvel-Regular.ttf);
+}
+
+
+/* CARD FLIP */
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+
+.flip-container.hover .flipper, .flip-container.flip .flipper  {
+transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back, .flip-container.flip {
+  width: 23vw;
+  position: relative;
+  height: 33vw;
+}
+
+div#dropper-div .flip-container, .front, .back, .flip-container.flip {
+  width: 12vw;
+  position: relative;
+  height: 16vw;
+}
+
+
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  width: 22vw;
+height: 31vw;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  width: 23vw;
+  left: -11vw;
+  height: 31vw;
+
+}
+/* hide back of pane during swap */
+.front2, .back2 {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front2 {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back2 {
+	transform: rotateY(180deg);
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  position: fixed;
+  top: 20px;
+  width: 84px;
+  z-index: 1000;
+  padding: 10px;
+  color: black;
+  font-weight: bold;
+  background: gold;
+  border: 2px solid black;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  outline: none;
+  border-radius: 4px;
+}
+button:hover {
+  background: #ffdf33;
+}
+button:active {
+  color: gold;
+  background: black;
+}
+
+#dropper-div{
+  width: 13vw;
+  height: 14vw;
+  cursor: copy;
+position: relative;
+top: 4vw;
+
+   }
+
+#dropper-div2{
+  width: 13vw;
+  height: 14vw;
+  cursor: copy;
+top: 10vw;
+position: relative;
+
+}
+
+#dropper-div3{
+  width: 13vw;
+  height: 14vw;
+  cursor: copy;
+  top: 16vw;
+position: relative;
+
+}
+
+.box{
+  background: white;
+  background-image: url("https://unixtitan.net/images/plus-sign-clipart-1.png");
+  background-size: cover;
+  border-style: inset;
+  border-width: .8vw;
+}
+div.noBox{
+  background-color: transparent;
+  border: none;
+  background-image: none;
+  border-style: none;
+}
+
+/*
+.noBox,#dropper-div2{
+  background-color: transparent;
+  border: none;
+  background-image: none;
+}
+
+.noBox,#dropper-div3{
+  background-color: transparent;
+  border: none;
+  background-image: none;
+} */

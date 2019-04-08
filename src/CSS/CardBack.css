@@ -1,0 +1,513 @@
+@import url(//fonts.googleapis.com/css?family=Patrick+Hand+SC|Bangers|Happy+Monkey);
+
+/* THE CARDS  */
+ ul.cardsBack {
+   width: 660px;
+   margin: 0 auto 20px;
+   height: 400px;
+   list-style-type: none;
+   position: relative;
+   padding: 20px 0;
+   cursor: pointer;
+   top: 0px;
+   z-index: 1;
+   left: 231px;
+
+
+
+ }
+ ul.cardsBack li.title {
+   margin: 0 0 20px;
+ }
+ ul.cardsBack li.title h2 {
+   font-weight: 700;
+ }
+ ul.cardsBack li.card {
+   height: 400px;
+   width: 300px;
+   border-radius: 10px;
+   position: absolute;
+   left: 0px;
+   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+ }
+/* FRONT OF CARD */
+.front {
+  border-style: outset;
+  border-width: 5px;
+   border-radius: 15px;
+   background: url("https://images-na.ssl-images-amazon.com/images/I/214g%2BD3%2B0zL._SL500_.jpg")
+ }
+ .front h1 {
+   font-family: SuperHero;
+   font-size: 35px;
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 10px;
+   /* color: rgba(black);
+   text-shadow: 1px 4px 6px #def, 0 0 0 #000, 1px 4px 6px #def; */
+   text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+   color: black;
+   opacity: 0.7;
+ }
+ .front h3 {
+   text-align: center;
+ }
+ /* BACK OF CARD */
+ .back {
+   background: url("https://images-na.ssl-images-amazon.com/images/I/214g%2BD3%2B0zL._SL500_.jpg");
+   border-style: outset;
+   border-width: 5px;
+    border-radius: 15px;
+    height: 400px;
+
+ }
+
+ .back h1 {
+   text-align: center;
+   padding-top: 15px;
+   padding-bottom: 10px
+ }
+ .back h3 {
+   text-align: center;
+ }
+ /*IMAGES */
+ /* FRONT IMAGE  */
+
+ ul.cardsBack li.card img.charImage {
+   width: 250px;
+   height: 300px;
+   position: absolute;
+   /* padding: 15px 20px 15px 20px; */
+   left: 25px;
+   border-style: inset
+   /* text-align: center */
+ }
+
+ /* ATTRIBUTE IMAGES */
+ ul.cardsBack li.card img {
+   width:20px;
+   max-width: 100%;
+ }
+
+ /* MARVEL LOGO  */
+ ul.cardsBack li.card img.marvelLogo {
+   top: 310px;
+width: 170px;
+height: 35px;
+position: relative;
+left: 75px;
+border-style: outset;
+ }
+ /* BACK IMAGE  */
+ ul.cardsBack li.card img.charImageBack {
+border-style: inset;
+clear: left;
+margin-right: 15px;
+    top: 0px;
+    z-index: 1;
+position: relative;
+    left: -30px;
+    top: 10px;
+    height: 129px;
+    width: 140px;
+ }
+/* BACK IMAGE FLOAT */
+ .hop{
+   float: left;
+ }
+
+ /* BACK CHARACTER DESCRIPTION  */
+ ul.cardsBack li.card div.content {
+   position: relative;
+   padding-left: 10px;
+   font-size: 11px;
+ }
+
+ /*  CSS FOR CARD IMAGESTACK */
+ ul.cardsBack li.card.card-1 {
+   z-index: 10;
+   -webkit-transform: rotateZ(-2deg);
+           transform: rotateZ(-2deg);
+ }
+ ul.cardsBack li.card.card-2 {
+   z-index: 9;
+   -webkit-transform: rotateZ(-7deg);
+           transform: rotateZ(-7deg);
+   transition-delay: 0.05s;
+ }
+ ul.cardsBack li.card.card-3 {
+   z-index: 8;
+   -webkit-transform: rotateZ(5deg);
+           transform: rotateZ(5deg);
+   transition-delay: 0.1s;
+ }
+ ul.cardsBack li.card.card-4 {
+   z-index: 7;
+   -webkit-transform: rotateZ(10deg);
+           transform: rotateZ(10deg);
+   transition-delay: 0.15s;
+ }
+ ul.cardsBack li.card.card-5 {
+   z-index: 6;
+   -webkit-transform: rotateZ(16deg);
+           transform: rotateZ(16deg);
+   transition-delay: 0.2s;
+ }
+ ul.cardsBack li.card.card-6 {
+   z-index: 6;
+   -webkit-transform: rotateZ(24deg);
+           transform: rotateZ(24deg);
+   transition-delay: 0.25s;
+ }
+
+ /* CSS FOR CARD EXPANSION PLACEMENT */
+ ul.cardsBack.transition li.card {
+   -webkit-transform: rotateZ(0deg);
+           transform: rotateZ(0deg);
+ }
+ ul.cardsBack.transition li.card.card-1 {
+   left: 710px;
+ }
+ ul.cardsBack.transition li.card.card-2 {
+   left: 380px;
+ }
+ ul.cardsBack.transition li.card.card-3 {
+   left: -0px;
+   /* visibility: hidden */
+ }
+ ul.cardsBack.transition li.card.card-4 {
+   left: -340px;
+ }
+ ul.cardsBack.transition li.card.card-5 {
+   left: -340px;
+   top: 500px
+
+ }
+ ul.cardsBack.transition li.card.card-6 {
+   left: -0px;
+   top: 500px
+
+ }
+ ul.cardsBack.transition li.card.card-7 {
+   left: 380px;
+   top: 500px
+
+ }
+ ul.cardsBack.transition li.card.card-8 {
+   left: 710px;
+   top: 500px
+ }
+ ul.cardsBack.transition li.card.card-9 {
+   left: -340px;
+   top: 1000px
+ }
+ ul.cardsBack.transition li.card.card-10 {
+   left: 0px;
+   top: 1000px
+ }
+ ul.cardsBack.transition li.card.card-11 {
+   left: 380px;
+   top: 1000px
+ }
+ ul.cardsBack.transition li.card.card-12 {
+   left: 710px;
+   top: 1000px
+ }
+
+.buttonthing-hidden {
+  visibility: hidden;
+}
+/*
+.buttonthing {
+  top: 34vw;
+  left: 9vw;
+} */
+
+.text{
+  min-height: 400px;
+
+}
+
+#bigCard .back{
+    width: 420px;
+    height: 550px;
+
+}
+
+.closeButton{
+  top: 0vw;
+      left: 14vw;
+      background: orange;
+      width: 3vw;
+}
+
+.removeButton{
+  top: 15vw;
+visibility: hidden;
+}
+
+.removeButton2{
+  top: 15vw;
+visibility: hidden;
+}
+
+.removeButton3{
+  top: 15vw;
+visibility: hidden;
+}
+.showButton{
+  visibility: visible;
+  position: relative;
+left: 2vw;
+top: 12vw;
+}
+
+
+.ComicCover{
+  transform: rotate(90deg)
+}
+
+.cover{
+  /* background-image: url(face.jpg); */
+  height: 77vw;
+  max-width: 46vw;
+ /* background-image: url('https://cdn.europosters.eu/image/750/posters/marvel-universe-i31869.jpg'); */
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: rotate(90deg);
+  top: -16vw;
+  left: -14vw;
+  z-index: -1;
+  background-color: red;
+background-blend-mode: multiply;
+}
+
+.photo  {
+  width: 17vw;
+      /* background-color: green; */
+      z-index: 1;
+      height: 25.5vw;
+position: relative;
+top: 49vw;
+    left: 9vw;
+    box-shadow: 12px 14px 18px black;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* -webkit-transform: rotate(90deg); */
+    transform: rotate(-90deg);
+    border-style: solid;
+    border-width: 1.5px;
+    color: white;
+
+}
+
+.descrip {
+  width: 46vw;
+  background-image: url(https://www.porcelaingres.com/img/collezioni/JUST-BEIGE/big/just_beige_gold_beige.jpg);
+  height: 33vw;
+    position: relative;
+    top: -13vw;
+    left: -3vw;
+      box-shadow: 5px -10px 18px black;
+      color: black;
+      background-color: black;
+      border-style: solid;
+      padding: 10px;
+      border-width: 4px;
+      transform: rotate(-90deg);
+      overflow: scroll;
+
+}
+
+.little-ikon {
+  right: -29vw;
+  width: 3vw;
+  height: 3.3vw;
+  position: relative;
+  top: -82.7vw;
+      background-color: white;
+      border-radius: 50%;
+      border-style: solid;
+      padding: 10px;
+      border-width: 5px;
+      border-color: black;
+}
+.little-ikon2 {
+  right: -33.3vw;
+      width: 3vw;
+      height: 3.3vw;
+      position: relative;
+      top: -67.7vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.little-ikon3 {
+  right: -29vw;
+  width: 3vw;
+  height: 3.3vw;
+  position: relative;
+  top: -70.7vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.little-ikon4 {
+  right: -33.6vw;
+  width: 3vw;
+  height: 3.3vw;
+  position: relative;
+  top: -92.7vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.little-ikon5 {
+  right: -33.5vw;
+  width: 3vw;
+  height: 3.3vw;
+  position: relative;
+  top: -58.7vw;
+      background-color: white;
+      border-radius: 50%;
+      border-style: solid;
+      padding: 10px;
+      border-width: 5px;
+      border-color: black;
+}
+.little-ikon6 {
+  right: -29vw;
+  width: 3vw;
+  height: 3.3vw;
+  position: relative;
+  top: -62vw;
+      background-color: white;
+      border-radius: 50%;
+      border-style: solid;
+      padding: 10px;
+      border-width: 5px;
+      border-color: black;
+}
+
+.ikon {
+  right: -28.3vw;
+  position: relative;
+  top: -52.7vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.ikon2 {
+  right: -32.9vw;
+  position: relative;
+  top: -38.7vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.ikon3 {
+  right: -28.4vw;
+  position: relative;
+  top: -43vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.ikon4 {
+  right: -33vw;
+  width: 69px;
+  height: 82px;
+  position: relative;
+  top: -66.3vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+.ikon5 {
+  right: -33vw;
+  width: 69px;
+  height: 82px;
+  position: relative;
+  top: -33.5vw;
+    background-color: white;
+    border-radius: 50%;
+    border-style: solid;
+    padding: 10px;
+    border-width: 5px;
+    border-color: black;
+}
+.ikon6 {
+  right: -28.5vw;
+  position: relative;
+  top: -38vw;
+  background-color: white;
+  border-radius: 50%;
+  border-style: solid;
+  padding: 10px;
+  border-width: 5px;
+  border-color: black;
+}
+
+.backPic{
+  transform: rotate(-90deg);
+}
+
+.ikons {
+  left: 8vw;
+  position: relative;
+  top: 4vw;
+}
+
+.ikons #bigIcon {
+  width: 4vw;
+  height: 4.5vw;
+  }
+
+  .backDesc{
+    transform: rotate(-90deg);
+text-transform: capitalize;
+text-align: justify;
+display: inline;
+font-size: 2.3vw;
+line-height: 3vw;
+  }
+
+.cardName {
+  color: red;
+  font-size: 5vw;
+      text-align: center;
+      top: 0vw;
+      left: 0vw;
+  position: relative;
+  line-height: normal;
+  margin: 2vw;
+
+}
+
+.desc{
+  float: right;
+  position: relative;
+  left: -3vw;
+}

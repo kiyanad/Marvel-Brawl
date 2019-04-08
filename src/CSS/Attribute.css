@@ -1,0 +1,136 @@
+
+/* Attribute Name and images  */
+.stats{
+  background-color: white;
+  overflow:hidden;
+  bottom: 0%;
+  position: absolute;
+  height: 40%;
+  width: 100%;
+
+}
+.stat-name{
+  position: relative;
+  position: relative;
+  top: -3.8vw;
+  left: 2.5vw;
+  color: red;
+  font-family: Super2;
+  font-size: 1.6vw;
+  font-weight: bold;
+
+}
+ul.cards li.card img.stat-pic{
+  position: relative;
+  left: 0.5vw;
+  top: 0vw;
+  width: 1.8vw;
+}
+
+.stat-pic{
+  position: relative;
+  left:5px;
+  top: 10px
+}
+.stat-name2{
+  position: relative;
+  position: relative;
+  top: -9.2vw;
+  left: 2.5vw;
+  color: blue;
+  font-family: Super2;
+  font-size: 1.6vw;
+  font-weight: bold;
+
+}
+
+.stat-pic2{
+  position: relative;
+  left:5px;
+  top: -10px
+}
+ul.cards li.card img.stat-pic2{
+  position: relative;
+  left: 0.5vw;
+  top: -5vw;
+  width: 1.8vw;
+}
+.stat-name3{
+  position: relative;
+  position: relative;
+  top: -13.8vw;
+  left: 2.5vw;
+  color: green;
+  font-family: Super2;
+  font-size: 1.6vw;
+  font-weight: bold;
+
+}
+
+ul.cards li.card img.stat-pic3{
+  position: relative;
+  top: -10vw;
+  width: 2.8vw;
+
+}
+
+.stat-name4{
+  position: relative;
+  position: relative;
+  top: -18.8vw;
+  left: 2.5vw;
+  color: purple;
+  font-family: Super2;
+  font-size: 1.6vw;
+  font-weight: bold;
+
+}
+
+ul.cards li.card img.stat-pic4{
+  position: relative;
+  left: 0.3vw;
+  top: -15vw;
+  width: 1.8vw;
+  height: 2.2vw;
+
+}
+
+.stat-name5{
+  position: relative;
+  position: relative;
+  top: -23.8vw;
+  left: 2.5vw;
+  color: orange;
+  font-family: Super2;
+  font-size: 1.6vw;
+  font-weight: bold;
+
+}
+
+ul.cards li.card img.stat-pic5{
+  position: relative;
+  top: -20vw;
+  width: 1.8vw;
+  height: 1.9vw;
+}
+
+.stat-name6{
+  position: relative;
+  position: relative;
+  top: -28.6vw;
+  left: 2.5vw;
+  color: brown;
+  font-family: Super2;
+  font-size: 1.6vw;
+  font-weight: bold;
+
+}
+
+ul.cards li.card img.stat-pic6{
+  position: relative;
+  top: -25vw;
+  width: 2.2vw;
+
+}
+
+/* END ATTRIBUTE */

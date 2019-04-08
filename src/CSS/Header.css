@@ -1,0 +1,67 @@
+/* MARVEL BRAWL HEADER & SHADOW */
+ header.hero {
+   text-align: center;
+   width: 100vw;
+   height: 37vw;
+   top: -1vw;
+   position: absolute;
+   z-index: -3;
+
+ }
+
+ header.hero h1 {
+   font-size: 6vw;
+   color: #555;
+   margin: 0 0 5px;
+   position: relative;
+   display: inline;
+   color: rgba(0,0,0,0.8);
+   font-family: Super4;
+   top: 12vw;
+   left: 22vw;
+
+  }
+
+ header.hero h2 {
+   font-size: 8.3vw;
+   color: #555;
+   margin: 0 0 5px;
+   position: relative;
+   display: inline;
+   color: rgba(0,0,255,0.7);
+   font-family: Super;
+   top: 18vw;
+   left: -15vw;
+
+ }
+
+ header.hero h2:after{
+   content: "Brawl";
+   position: absolute;
+   left: 0.4vw;
+   top: 5.1vw;
+   color: rgba(0,0,0,0.8);
+ }
+
+ header.hero h1:after{
+   content: "MARVEL";
+   position: relative;
+   left: -20.4vw;
+   top: 0.4vw;
+   color: rgba(255,0,0,0.7);
+ }
+
+ hr {
+   border: 0;
+   border-top: 1px solid rgba(255, 255, 255, 0.6);
+   padding: 0 0 20px;
+ }
+ /* END OF HEADER */
+/* HEADER IMAGE */
+.pow{
+  width: 52vw;
+  position: absolute;
+  height: 29vw;
+  top: 2vw;
+  left: 27vw;
+}

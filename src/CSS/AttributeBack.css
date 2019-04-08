@@ -1,0 +1,131 @@
+
+/* Attribute Name and images  */
+.stats2{
+background-color: white;
+overflow:hidden;
+bottom: 0%;
+position: absolute;
+height: 40%;
+width: 100%;
+
+}
+.stat2-name{
+  position: relative;
+  top: -15px;
+  left: 28px;
+color: red;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+.stat2-pic{
+  position: relative;
+  left:5px;
+  top: 10px
+}
+.stat2-name2{
+  position: relative;
+  top: -39px;
+  left: 28px;
+color: blue;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+.stat2-pic2{
+  position: relative;
+  left:5px;
+  top: -10px
+}
+
+.stat2-pic3{
+  top: -30px;
+  position: relative;
+  width: 30px;
+
+}
+
+.stat2-name3{
+  position: relative;
+  top: -53px;
+  left: 28px;
+color: green;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+ul.cards li.card img.stat2-pic3{
+  position: relative;
+  left:3px;
+  top: -30px;
+  width: 30px
+}
+
+.stat2-name4{
+  position: relative;
+  top: -80px;
+  left: 28px;
+color: purple;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+.stat2-pic4{
+top: -50px;
+position: relative;
+width: 23px;
+height: 33px;
+}
+
+ul.cards li.card img.stat2-pic4{
+  position: relative;
+  left:3px;
+  top: -55px;
+  width: 20px;
+  height: 30px
+}
+
+.stat2-name5{
+  position: relative;
+  top: -105px;
+  left: 28px;
+color: orange;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+.stat2-pic5{
+  position: relative;
+  top: -70px;
+  height: 33px;
+}
+
+.stat2-name6{
+  position: relative;
+  top: -95px;
+  left: 54px;
+color: brown;
+font-family: Super2;
+font-size: 19px;
+font-weight: bold;
+
+}
+
+ul.cardsBack li.card img.stat2-pic6{
+  position: relative;
+  top: -65px;
+  height: 31px;
+  width: 51px;
+}
+
+/* END ATTRIBUTE */
